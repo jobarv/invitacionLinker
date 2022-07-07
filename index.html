@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Maven+Pro:wght@400;500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <title>Invitación Linker Medic</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/medic-logo.png" alt="logo">
+
+
+        <!-- <div class="texto">
+            <h1>Cambiamos el modo de brindar servicios de salud.</h1>
+        </div> -->
+        <div class="slogan">
+            <h2>"Turismo Salud"</h2>
+
+        </div>
+    </header>
+    <section class="container">
+        <div class="inf">
+            <h2>Cóctel de Bienvenida</h2>
+            <br>
+            <p>Acompáñanos este miércoles 13 de Julio del 2022, en el Patio Azul a las 19:00 horas, en el centro de la
+                ciudad.</p>
+            <br>
+            <p> Te compartimos la ubicación abajo, es muy importante nos envíes tu información por whatsapp con
+                el formulario anexo, estaremos muy felices de contar con tu presencia.</p>
+
+            <br>
+            <p>Está invitación es válida para tres personas.</p>
+
+
+        </div>
+
+        <form id="formulario" class="formulario">
+            <h1>Registro de Asistentes</h1>
+            <div class="box-input">
+                <input name="nombre" id="nombre" type="text" required>
+                <span data-placeholder="Escriba su Nombre"></span>
+            </div>
+            <div class="box-input">
+                <input name="apellidos" id="apellidos" type="text" required>
+                <span data-placeholder="Escriba sus Apellidos"></span>
+            </div>
+            <div class="box-input">
+                <input name="email" id="email" type="email" required>
+                <span data-placeholder="Escriba su Correo Electrónico"></span>
+            </div>
+            <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+        </form>
+
+    </section>
+    <div class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459970.70900776866!2d-100.63245639749678!3d25.75334402477814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662958056111857%3A0xa74e5c0a8b6e5e57!2sEl%20Patio%20Azul!5e0!3m2!1ses-419!2smx!4v1657218323908!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <a href="https://www.barras-designs.com.mx">
+
+            <h5>Desarrollado por Barras-Designs</h5>
+        </a>
+
+    </footer>
+    <script type="text/javascript">
+        $(".box-input input").on("focus", function () {
+            $(this).addClass("focus");
+        });
+
+        $(".box-input input").on("blur", function () {
+            if ($(this).val() == "") {
+                $(this).removeClass("focus");
+            }
+        });
+
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
