@@ -3,12 +3,14 @@
 	padding: 0;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
+	/* font-family: 'The Nautigal', cursive; */
 }
 
 body {
 	min-height: 100vh;
-	background: linear-gradient(90deg, rgba(29, 190, 182, 1) 0%, rgba(5, 153, 146, 1) 100%);
-	;
+	/* background: linear-gradient(90deg, rgba(29, 190, 182, 1) 0%, rgba(5, 153, 146, 1) 100%);
+	; */
+	background-color: rgb(163, 238, 234);
 }
 
 
@@ -17,9 +19,13 @@ h2 {
 }
 
 p {
-	font-size:1.3rem;
+	font-size: 1.3rem;
 }
-
+.cursiva {
+	font-family: 'The Nautigal';
+	font-size: 10rem;
+	color: #D4AF37;
+}
 h1,
 h2,
 h3,
@@ -27,7 +33,7 @@ h4,
 h5,
 p {
 	text-align: center;
-	color: white;
+	color: #000;	
 }
 
 .texto {
@@ -42,6 +48,11 @@ p {
 	justify-content: flex-start;
 	margin-top: 0px;
 	width: 100%;
+}
+.turismo {
+	font-family: 'Arima', cursive;;
+	color:rgb(14, 172, 211);
+	
 }
 
 
